@@ -1,0 +1,7 @@
+BEGIN test1
+    INPUTS
+      A [0, 1]
+      B [0, 1]
+      OPER [2]
+    OUTPUTS
+      C [0,0,0,1]
