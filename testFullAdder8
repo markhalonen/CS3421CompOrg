@@ -1,0 +1,6 @@
+BEGIN test1
+    INPUTS
+      A SIGNED(16) [2,-5]
+      B SIGNED(16) [1, 10]
+    OUTPUTS
+      S SIGNED(8) [3,12,-4,5]
