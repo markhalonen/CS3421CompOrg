@@ -1,0 +1,24 @@
+BEGIN test1
+    INPUTS
+      A [0]
+      B [0, 1]
+    OUTPUTS
+      OUT [0, 0]
+BEGIN test2
+	INPUTS
+		A [3]
+		B [0,1,4]
+	OUTPUTS
+		OUT[3, 1, 0]
+BEGIN test3
+	INPUTS
+		A [8]
+		B [0,1,2,3]
+	OUTPUTS
+		OUT [8, 4, 2, 1]
+BEGIN test4
+	INPUTS
+		A SIGNED(8) [-64]
+		B [0, 1]
+	OUTPUTS
+		OUT SIGNED(8) [-64, -32]
