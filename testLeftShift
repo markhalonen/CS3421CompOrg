@@ -1,0 +1,8 @@
+BEGIN test1
+    INPUTS
+      A [0, 1]
+      B [0, 1]
+      S [0, 1]
+    OUTPUTS
+      OUT [0, 0, 1, 0,
+         0, 1, 1, 1]

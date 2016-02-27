@@ -1,0 +1,18 @@
+BEGIN test1
+    INPUTS
+      A [0, 1]
+      B [0, 1]
+    OUTPUTS
+      OUT [0, 0, 1, 2]
+BEGIN test2
+	INPUTS
+		A [2]
+		B [0,1]
+	OUTPUTS
+		OUT [2,4]
+BEGIN test3
+	INPUTS
+		A [3]
+		B [0, 1]
+	OUTPUTS
+		OUT [3, 6]
