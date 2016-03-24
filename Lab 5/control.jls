@@ -1,0 +1,820 @@
+CIRCUIT control
+ELEMENT WireEnd
+ int id 0
+ int x 264
+ int y 72
+ int width 0
+ int height 0
+ String put "35"
+ ref attach 42
+ ref wire 23
+END
+ELEMENT OutputPin
+ int id 1
+ int x 516
+ int y 204
+ int width 72
+ int height 24
+ String name "RegWrite"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 2
+ int x 504
+ int y 420
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 38
+ ref wire 61
+END
+ELEMENT WireEnd
+ int id 3
+ int x 420
+ int y 228
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 41
+ ref wire 69
+END
+ELEMENT OutputPin
+ int id 5
+ int x 516
+ int y 24
+ int width 60
+ int height 24
+ String name "RegDst"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 6
+ int x 204
+ int y 60
+ int width 0
+ int height 0
+ String put "output"
+ ref attach 49
+ ref wire 65
+END
+ELEMENT WireEnd
+ int id 8
+ int x 288
+ int y 48
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 45
+ ref wire 31
+END
+ELEMENT WireEnd
+ int id 9
+ int x 504
+ int y 216
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 81
+ ref wire 27
+END
+ELEMENT WireEnd
+ int id 10
+ int x 516
+ int y 468
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 30
+ ref wire 77
+END
+ELEMENT JumpEnd
+ int id 11
+ int x 384
+ int y 324
+ int width 36
+ int height 0
+ String name "sw"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 12
+ int x 264
+ int y 60
+ int width 0
+ int height 0
+ String put "4"
+ ref attach 42
+ ref wire 14
+END
+ELEMENT WireEnd
+ int id 14
+ int x 288
+ int y 60
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 106
+ ref wire 12
+END
+ELEMENT JumpEnd
+ int id 15
+ int x 384
+ int y 108
+ int width 36
+ int height 0
+ String name "sw"
+ int bits 1
+END
+ELEMENT OrGate
+ int id 16
+ int x 456
+ int y 84
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 17
+ int x 444
+ int y 432
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 93
+ ref wire 48
+END
+ELEMENT JumpEnd
+ int id 18
+ int x 384
+ int y 468
+ int width 48
+ int height 0
+ String name "jump"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 19
+ int x 420
+ int y 516
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 20
+ ref wire 66
+END
+ELEMENT JumpEnd
+ int id 20
+ int x 384
+ int y 516
+ int width 36
+ int height 0
+ String name "halt"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 21
+ int x 288
+ int y 96
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 97
+ ref wire 89
+END
+ELEMENT WireEnd
+ int id 22
+ int x 444
+ int y 204
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 55
+ ref wire 35
+END
+ELEMENT WireEnd
+ int id 23
+ int x 288
+ int y 72
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 24
+ ref wire 0
+END
+ELEMENT JumpStart
+ int id 24
+ int x 288
+ int y 72
+ int width 36
+ int height 0
+ String name "lw"
+ int bits 1
+END
+ELEMENT OutputPin
+ int id 26
+ int x 516
+ int y 504
+ int width 48
+ int height 24
+ String name "Halt"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 27
+ int x 516
+ int y 216
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 1
+ ref wire 9
+END
+ELEMENT OutputPin
+ int id 30
+ int x 516
+ int y 456
+ int width 48
+ int height 24
+ String name "Jump"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 31
+ int x 264
+ int y 48
+ int width 0
+ int height 0
+ String put "2"
+ ref attach 42
+ ref wire 8
+END
+ELEMENT OutputPin
+ int id 32
+ int x 516
+ int y 84
+ int width 60
+ int height 24
+ String name "ALUSrc"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 33
+ int x 444
+ int y 36
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 54
+ ref wire 79
+END
+ELEMENT WireEnd
+ int id 34
+ int x 456
+ int y 84
+ int width 0
+ int height 0
+ String put "input0"
+ ref attach 16
+ ref wire 103
+END
+ELEMENT WireEnd
+ int id 35
+ int x 456
+ int y 204
+ int width 0
+ int height 0
+ String put "input0"
+ ref attach 81
+ ref wire 22
+END
+ELEMENT Binder
+ int id 38
+ int x 468
+ int y 408
+ int width 36
+ int height 36
+ int bits 2
+ int tristate 0
+ pair 0 0
+ pair 1 1
+END
+ELEMENT OutputPin
+ int id 40
+ int x 516
+ int y 360
+ int width 60
+ int height 24
+ String name "Branch"
+ int bits 1
+ int watch 0
+END
+ELEMENT JumpEnd
+ int id 41
+ int x 384
+ int y 228
+ int width 36
+ int height 0
+ String name "lw"
+ int bits 1
+END
+ELEMENT Splitter
+ int id 42
+ int x 216
+ int y 24
+ int width 48
+ int height 84
+ int bits 64
+ int tristate 0
+ pair 0 0
+ pair 2 2
+ pair 4 4
+ pair 35 35
+ pair 43 43
+ pair 63 63
+END
+ELEMENT WireEnd
+ int id 43
+ int x 420
+ int y 108
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 15
+ ref wire 80
+END
+ELEMENT JumpEnd
+ int id 44
+ int x 384
+ int y 420
+ int width 48
+ int height 0
+ String name "beq"
+ int bits 1
+END
+ELEMENT JumpStart
+ int id 45
+ int x 288
+ int y 48
+ int width 48
+ int height 0
+ String name "jump"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 46
+ int x 468
+ int y 420
+ int width 0
+ int height 0
+ String put "0"
+ ref attach 38
+ ref wire 57
+END
+ELEMENT WireEnd
+ int id 47
+ int x 504
+ int y 96
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 16
+ ref wire 87
+END
+ELEMENT WireEnd
+ int id 48
+ int x 468
+ int y 432
+ int width 0
+ int height 0
+ String put "1"
+ ref attach 38
+ ref wire 17
+END
+ELEMENT Decoder
+ int id 49
+ int x 144
+ int y 48
+ int width 60
+ int height 24
+ int bits 6
+ int delay 15
+END
+ELEMENT InputPin
+ int id 50
+ int x 48
+ int y 48
+ int width 72
+ int height 24
+ String name "OpCode"
+ int bits 6
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 51
+ int x 144
+ int y 60
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 49
+ ref wire 85
+END
+ELEMENT WireEnd
+ int id 52
+ int x 516
+ int y 156
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 67
+ ref wire 96
+END
+ELEMENT JumpEnd
+ int id 54
+ int x 384
+ int y 36
+ int width 60
+ int height 0
+ String name "rformat"
+ int bits 1
+END
+ELEMENT JumpEnd
+ int id 55
+ int x 384
+ int y 204
+ int width 60
+ int height 0
+ String name "rformat"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 57
+ int x 432
+ int y 420
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 44
+ ref wire 46
+END
+ELEMENT WireEnd
+ int id 58
+ int x 516
+ int y 372
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 40
+ ref wire 72
+END
+ELEMENT JumpEnd
+ int id 59
+ int x 384
+ int y 156
+ int width 36
+ int height 0
+ String name "lw"
+ int bits 1
+END
+ELEMENT OutputPin
+ int id 60
+ int x 516
+ int y 264
+ int width 84
+ int height 24
+ String name "MemRead"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 61
+ int x 516
+ int y 420
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 86
+ ref wire 2
+END
+ELEMENT JumpEnd
+ int id 62
+ int x 384
+ int y 276
+ int width 36
+ int height 0
+ String name "lw"
+ int bits 1
+END
+ELEMENT JumpStart
+ int id 64
+ int x 288
+ int y 84
+ int width 36
+ int height 0
+ String name "sw"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 65
+ int x 216
+ int y 60
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 42
+ ref wire 6
+END
+ELEMENT WireEnd
+ int id 66
+ int x 516
+ int y 516
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 26
+ ref wire 19
+END
+ELEMENT OutputPin
+ int id 67
+ int x 516
+ int y 144
+ int width 84
+ int height 24
+ String name "MemtoReg"
+ int bits 1
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 69
+ int x 456
+ int y 228
+ int width 0
+ int height 0
+ String put "input1"
+ ref attach 81
+ ref wire 3
+END
+ELEMENT WireEnd
+ int id 70
+ int x 264
+ int y 36
+ int width 0
+ int height 0
+ String put "0"
+ ref attach 42
+ ref wire 92
+END
+ELEMENT WireEnd
+ int id 71
+ int x 420
+ int y 324
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 11
+ ref wire 95
+END
+ELEMENT WireEnd
+ int id 72
+ int x 432
+ int y 372
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 91
+ ref wire 58
+END
+ELEMENT OutputPin
+ int id 73
+ int x 516
+ int y 312
+ int width 72
+ int height 24
+ String name "MemWrite"
+ int bits 1
+ int watch 0
+END
+ELEMENT JumpEnd
+ int id 75
+ int x 384
+ int y 84
+ int width 36
+ int height 0
+ String name "lw"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 76
+ int x 288
+ int y 84
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 64
+ ref wire 100
+END
+ELEMENT WireEnd
+ int id 77
+ int x 432
+ int y 468
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 18
+ ref wire 10
+END
+ELEMENT WireEnd
+ int id 79
+ int x 516
+ int y 36
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 5
+ ref wire 33
+END
+ELEMENT WireEnd
+ int id 80
+ int x 456
+ int y 108
+ int width 0
+ int height 0
+ String put "input1"
+ ref attach 16
+ ref wire 43
+END
+ELEMENT OrGate
+ int id 81
+ int x 456
+ int y 204
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 82
+ int x 516
+ int y 276
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 60
+ ref wire 90
+END
+ELEMENT WireEnd
+ int id 85
+ int x 120
+ int y 60
+ int width 0
+ int height 0
+ String put "output"
+ ref attach 50
+ ref wire 51
+END
+ELEMENT OutputPin
+ int id 86
+ int x 516
+ int y 408
+ int width 60
+ int height 24
+ String name "ALUOpt"
+ int bits 2
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 87
+ int x 516
+ int y 96
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 32
+ ref wire 47
+END
+ELEMENT WireEnd
+ int id 89
+ int x 264
+ int y 96
+ int width 0
+ int height 0
+ String put "63"
+ ref attach 42
+ ref wire 21
+END
+ELEMENT WireEnd
+ int id 90
+ int x 420
+ int y 276
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 62
+ ref wire 82
+END
+ELEMENT JumpEnd
+ int id 91
+ int x 384
+ int y 372
+ int width 48
+ int height 0
+ String name "beq"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 92
+ int x 288
+ int y 36
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 104
+ ref wire 70
+END
+ELEMENT JumpEnd
+ int id 93
+ int x 384
+ int y 432
+ int width 60
+ int height 0
+ String name "rformat"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 95
+ int x 516
+ int y 324
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 73
+ ref wire 71
+END
+ELEMENT WireEnd
+ int id 96
+ int x 420
+ int y 156
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 59
+ ref wire 52
+END
+ELEMENT JumpStart
+ int id 97
+ int x 288
+ int y 96
+ int width 36
+ int height 0
+ String name "halt"
+ int bits 1
+END
+ELEMENT WireEnd
+ int id 100
+ int x 264
+ int y 84
+ int width 0
+ int height 0
+ String put "43"
+ ref attach 42
+ ref wire 76
+END
+ELEMENT WireEnd
+ int id 103
+ int x 420
+ int y 84
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 75
+ ref wire 34
+END
+ELEMENT JumpStart
+ int id 104
+ int x 288
+ int y 36
+ int width 60
+ int height 0
+ String name "rformat"
+ int bits 1
+END
+ELEMENT JumpStart
+ int id 106
+ int x 288
+ int y 60
+ int width 48
+ int height 0
+ String name "beq"
+ int bits 1
+END
+ENDCIRCUIT

@@ -1,0 +1,624 @@
+CIRCUIT ALUControl
+ELEMENT Splitter
+ int id 0
+ int x 120
+ int y 144
+ int width 36
+ int height 36
+ int bits 2
+ int tristate 0
+ pair 0 0
+ pair 1 1
+END
+ELEMENT WireEnd
+ int id 1
+ int x 348
+ int y 156
+ int width 0
+ int height 0
+ String put "output"
+ ref attach 14
+ ref wire 63
+END
+ELEMENT WireEnd
+ int id 4
+ int x 420
+ int y 168
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 55
+ ref wire 57
+END
+ELEMENT WireEnd
+ int id 6
+ int x 516
+ int y 108
+ int width 6
+ int height 6
+ ref wire 44
+ ref wire 87
+END
+ELEMENT WireEnd
+ int id 8
+ int x 348
+ int y 72
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 47
+ ref wire 51
+END
+ELEMENT WireEnd
+ int id 11
+ int x 444
+ int y 120
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 86
+ ref wire 77
+END
+ELEMENT WireEnd
+ int id 12
+ int x 156
+ int y 48
+ int width 6
+ int height 6
+ String put "0"
+ ref attach 75
+ ref wire 34
+END
+ELEMENT WireEnd
+ int id 13
+ int x 288
+ int y 84
+ int width 6
+ int height 6
+ ref wire 27
+ ref wire 17
+END
+ELEMENT AndGate
+ int id 14
+ int x 300
+ int y 144
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 16
+ int x 96
+ int y 156
+ int width 0
+ int height 0
+ String put "output"
+ ref attach 56
+ ref wire 31
+END
+ELEMENT WireEnd
+ int id 17
+ int x 300
+ int y 84
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 47
+ ref wire 13
+END
+ELEMENT WireEnd
+ int id 19
+ int x 660
+ int y 156
+ int width 0
+ int height 0
+ String put "input"
+ ref attach 46
+ ref wire 52
+END
+ELEMENT OrGate
+ int id 22
+ int x 228
+ int y 48
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 24
+ int x 540
+ int y 144
+ int width 6
+ int height 6
+ ref wire 50
+ ref wire 51
+END
+ELEMENT WireEnd
+ int id 25
+ int x 156
+ int y 72
+ int width 6
+ int height 6
+ String put "2"
+ ref attach 75
+ ref wire 88
+END
+ELEMENT WireEnd
+ int id 26
+ int x 216
+ int y 72
+ int width 6
+ int height 6
+ ref wire 83
+ ref wire 53
+END
+ELEMENT WireEnd
+ int id 27
+ int x 288
+ int y 96
+ int width 6
+ int height 6
+ ref wire 13
+ ref wire 82
+ ref wire 48
+END
+ELEMENT WireEnd
+ int id 31
+ int x 120
+ int y 156
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 0
+ ref wire 16
+END
+ELEMENT WireEnd
+ int id 34
+ int x 228
+ int y 48
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 22
+ ref wire 12
+END
+ELEMENT Binder
+ int id 36
+ int x 588
+ int y 132
+ int width 36
+ int height 48
+ int bits 3
+ int tristate 0
+ pair 0 0
+ pair 1 1
+ pair 2 2
+END
+ELEMENT WireEnd
+ int id 38
+ int x 204
+ int y 180
+ int width 6
+ int height 6
+ ref wire 60
+ ref wire 45
+END
+ELEMENT WireEnd
+ int id 39
+ int x 276
+ int y 60
+ int width 0
+ int height 0
+ String put "output"
+ ref attach 22
+ ref wire 42
+END
+ELEMENT NotGate
+ int id 41
+ int x 372
+ int y 120
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 1
+ String orientation "right"
+ int delay 5
+END
+ELEMENT WireEnd
+ int id 42
+ int x 300
+ int y 60
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 47
+ ref wire 39
+END
+ELEMENT WireEnd
+ int id 44
+ int x 516
+ int y 156
+ int width 6
+ int height 6
+ ref wire 68
+ ref wire 6
+END
+ELEMENT WireEnd
+ int id 45
+ int x 372
+ int y 180
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 55
+ ref wire 38
+END
+ELEMENT OutputPin
+ int id 46
+ int x 660
+ int y 144
+ int width 72
+ int height 24
+ String name "operation"
+ int bits 3
+ int watch 0
+END
+ELEMENT AndGate
+ int id 47
+ int x 300
+ int y 60
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 48
+ int x 288
+ int y 168
+ int width 6
+ int height 6
+ ref wire 76
+ ref wire 78
+ ref wire 27
+END
+ELEMENT WireEnd
+ int id 50
+ int x 588
+ int y 144
+ int width 6
+ int height 6
+ String put "0"
+ ref attach 36
+ ref wire 24
+END
+ELEMENT WireEnd
+ int id 51
+ int x 540
+ int y 72
+ int width 6
+ int height 6
+ ref wire 24
+ ref wire 8
+END
+ELEMENT WireEnd
+ int id 52
+ int x 624
+ int y 156
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 36
+ ref wire 19
+END
+ELEMENT WireEnd
+ int id 53
+ int x 216
+ int y 84
+ int width 6
+ int height 6
+ ref wire 26
+ ref wire 92
+END
+ELEMENT OrGate
+ int id 55
+ int x 372
+ int y 156
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT InputPin
+ int id 56
+ int x 48
+ int y 144
+ int width 48
+ int height 24
+ String name "aluop"
+ int bits 2
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 57
+ int x 588
+ int y 168
+ int width 6
+ int height 6
+ String put "2"
+ ref attach 36
+ ref wire 4
+END
+ELEMENT WireEnd
+ int id 58
+ int x 204
+ int y 60
+ int width 6
+ int height 6
+ ref wire 81
+ ref wire 79
+END
+ELEMENT WireEnd
+ int id 60
+ int x 204
+ int y 156
+ int width 6
+ int height 6
+ ref wire 38
+ ref wire 61
+END
+ELEMENT WireEnd
+ int id 61
+ int x 156
+ int y 156
+ int width 6
+ int height 6
+ String put "0"
+ ref attach 0
+ ref wire 60
+END
+ELEMENT InputPin
+ int id 62
+ int x 48
+ int y 60
+ int width 48
+ int height 24
+ String name "func"
+ int bits 6
+ int watch 0
+END
+ELEMENT WireEnd
+ int id 63
+ int x 372
+ int y 156
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 55
+ ref wire 1
+END
+ELEMENT WireEnd
+ int id 64
+ int x 96
+ int y 72
+ int width 0
+ int height 0
+ String put "output"
+ ref attach 62
+ ref wire 73
+END
+ELEMENT WireEnd
+ int id 66
+ int x 420
+ int y 96
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 80
+ ref wire 69
+END
+ELEMENT WireEnd
+ int id 68
+ int x 588
+ int y 156
+ int width 6
+ int height 6
+ String put "1"
+ ref attach 36
+ ref wire 44
+END
+ELEMENT WireEnd
+ int id 69
+ int x 444
+ int y 96
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 86
+ ref wire 66
+END
+ELEMENT WireEnd
+ int id 73
+ int x 120
+ int y 72
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 75
+ ref wire 64
+END
+ELEMENT WireEnd
+ int id 74
+ int x 180
+ int y 132
+ int width 6
+ int height 6
+ ref wire 84
+ ref wire 88
+END
+ELEMENT Splitter
+ int id 75
+ int x 120
+ int y 36
+ int width 36
+ int height 84
+ int bits 6
+ int tristate 0
+ pair 0 0
+ pair 1 1
+ pair 2 2
+ pair 3 3
+ pair 4 4
+ pair 5 5
+END
+ELEMENT WireEnd
+ int id 76
+ int x 156
+ int y 168
+ int width 6
+ int height 6
+ String put "1"
+ ref attach 0
+ ref wire 48
+END
+ELEMENT WireEnd
+ int id 77
+ int x 420
+ int y 132
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 41
+ ref wire 11
+END
+ELEMENT WireEnd
+ int id 78
+ int x 300
+ int y 168
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 14
+ ref wire 48
+END
+ELEMENT WireEnd
+ int id 79
+ int x 156
+ int y 60
+ int width 6
+ int height 6
+ String put "1"
+ ref attach 75
+ ref wire 58
+END
+ELEMENT NotGate
+ int id 80
+ int x 372
+ int y 84
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 1
+ String orientation "right"
+ int delay 5
+END
+ELEMENT WireEnd
+ int id 81
+ int x 204
+ int y 144
+ int width 6
+ int height 6
+ ref wire 58
+ ref wire 85
+END
+ELEMENT WireEnd
+ int id 82
+ int x 372
+ int y 96
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 80
+ ref wire 27
+END
+ELEMENT WireEnd
+ int id 83
+ int x 228
+ int y 72
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 22
+ ref wire 26
+END
+ELEMENT WireEnd
+ int id 84
+ int x 372
+ int y 132
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 41
+ ref wire 74
+END
+ELEMENT WireEnd
+ int id 85
+ int x 300
+ int y 144
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 14
+ ref wire 81
+END
+ELEMENT OrGate
+ int id 86
+ int x 444
+ int y 96
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 87
+ int x 492
+ int y 108
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 86
+ ref wire 6
+END
+ELEMENT WireEnd
+ int id 88
+ int x 180
+ int y 72
+ int width 6
+ int height 6
+ ref wire 25
+ ref wire 74
+END
+ELEMENT WireEnd
+ int id 92
+ int x 156
+ int y 84
+ int width 6
+ int height 6
+ String put "3"
+ ref attach 75
+ ref wire 53
+END
+ENDCIRCUIT
